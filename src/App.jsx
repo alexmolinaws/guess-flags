@@ -75,11 +75,11 @@ function App() {
       <Header />
 
       <section className="px-4 md:px-0">
-        <div className="max-w-xl pt-11 pb-9 px-7 rounded-xl mx-auto text-center bg-gray-900">
+        <div className="max-w-xl pt-10 pb-8 px-7 rounded-xl mx-auto text-center bg-gray-900">
 
           <Flag name={flag.name} code={flag.code} />
 
-          <div className="flex justify-between items-center w-5/6 mx-auto mb-10">
+          <div className="flex justify-between items-center w-5/6 mx-auto mb-8">
             <p className="w-2/6 text-left">Country:</p>
             
             <select 

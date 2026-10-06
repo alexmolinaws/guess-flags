@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 
 export function Header() {
   return (
-    <header className="max-w-xl pt-16 mb-10 mx-auto text-center">
-      <h1 className="mb-6 text-4xl font-bold">
+    <header className="max-w-xl pt-12 mb-8 mx-auto text-center">
+      <h1 className="mb-3 text-4xl font-bold">
         Guess the Flag!
       </h1>
       <p className="px-4 md:px-0 leading-relaxed">
-        Select a country name that would match the flag image below and bet!
+        Select the right country and bet!
       </p>
     </header>
   )
@@ -15,7 +15,7 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="max-w-xl py-10 pb-14 mx-auto text-sm text-center">
+    <footer className="max-w-xl py-8 pb-14 mx-auto text-sm text-center">
       <p className="px-4 md:px-0 mb-6">
         Developed by Alex Molina | License: <a href="https://creativecommons.org/licenses/by/4.0/" className="font-bold hover:underline hover:text-amber-400">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" className="inline-block max-w-4 max-h-4 ml-2 mr-1" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" className="inline-block max-w-4 max-h-4 mr-1" /> | <a href="https://github.com/alexmolinaws/guess-flags" className="hover:underline hover:text-amber-400">Source Code</a> | <a href="https://linktr.ee/alexmolinaws" className="hover:text-amber-400 hover:underline">Portfolio</a>
       </p>
@@ -28,7 +28,7 @@ export function Flag({name, code}) {
     <img
       src={`https://flagcdn.com/${code}.svg`}
       alt={name}
-      width="50%"
+      width="47%"
       className="block mx-auto mb-11 border-2 border-white"
     />
   )
@@ -84,8 +84,8 @@ export function Notification({type, modifier, amount}) {
 export default function Score({value}) {
   return (
     <section className="px-4 md:px-00">
-      <div className="max-w-xl p-6 rounded-xl mt-8 mx-auto text-center bg-gray-900">
-        <p className="text-xl">
+      <div className="max-w-xl py-5 px-6 rounded-xl mt-7 mx-auto text-center bg-gray-900">
+        <p className="text-lg">
           Your earnings: <span className="font-bold text-amber-400">${value}</span>
         </p>
       </div>

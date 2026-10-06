@@ -14,7 +14,7 @@ export function Bar({bet, setBet}) {
       <input
         type="range"
         id="range"
-        className="w-5/6 mb-6 mx-auto accent-amber-500 hover:accent-amber-700"
+        className="w-5/6 mb-5 mx-auto accent-amber-500 hover:accent-amber-700"
         min={MIN}
         max={MAX}
         step={STEP}
